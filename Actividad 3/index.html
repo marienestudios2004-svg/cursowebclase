@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obj 5 — Mi primera asincronía</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0d1117; color: #c9d1d9; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 32px; max-width: 560px; }
+    h1 { color: #58a6ff; font-size: 1.4rem; margin-bottom: 8px; }
+    .sub { color: #8b949e; margin-bottom: 20px; font-size: 0.95rem; }
+    #estado { color: #f0f6fc; font-size: 1.2rem; margin: 12px 0; }
+    #resultado { color: #3fb950; font-size: 1.4rem; font-weight: 600; min-height: 1.6em; margin-bottom: 12px; }
+    button { background: #e8630a; color: #fff; border: none; border-radius: 8px; padding: 10px 20px; font-size: 1rem; cursor: pointer; }
+    button:hover { background: #f4760f; }
+    #btnCheck { background: #1f6feb; margin-top: 14px; }
+    #btnCheck:hover { background: #388bfd; }
+    ol { font-size: 0.92rem; line-height: 1.8; padding-left: 20px; margin-top: 20px; }
+    code { background: #21262d; padding: 2px 6px; border-radius: 4px; color: #ffd43b; }
+    .tip { background: #1f2937; border-left: 4px solid #58a6ff; padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 0.9rem; margin-top: 16px; }
+    #autocheck { margin-top: 18px; font-weight: 600; color: #3fb950; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🍕 Obj 5 — Mi primera asincronía</h1>
+    <p class="sub">Meta: crear una promesa con <code>setTimeout</code> y consumirla con <code>.then()</code>.</p>
+
+    <p id="estado">Listo para pedir 🍕</p>
+    <p id="resultado"></p>
+    <button id="btnPedir">🍕 Pedir pizza</button>
+
+    <ol>
+      <li>Selecciona el botón <code>#btnPedir</code> y el <code>#estado</code>.</li>
+      <li>En el <code>click</code>: pon "⏳ Preparando…" y crea la promesa <code>pedido</code> que con <code>setTimeout</code> de <strong>2000ms</strong> se cumpla con <code>"🍕 ¡Pizza lista!"</code>.</li>
+      <li>Consume la promesa con <code>.then()</code> y muestra el mensaje en <code>#resultado</code>.</li>
+      <li>Espera 2 segundos y pulsa <code>Comprobar mi ejercicio</code>: la promesa debe entregar la pizza. 🎉</li>
+    </ol>
+
+    <div class="tip">🤝 La promesa es un "vale": pendiente → cumple con el resultado. El <code>check</code> tarda 2 segundos a propósito: está esperando tu promesa.</div>
+    <button id="btnCheck">✔ Comprobar mi ejercicio</button>
+    <p id="autocheck">Pulsa «Comprobar mi ejercicio» para verificar.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

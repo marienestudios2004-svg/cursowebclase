@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obj 2 — Eventos click</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0d1117; color: #c9d1d9; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 32px; max-width: 560px; }
+    h1 { color: #58a6ff; font-size: 1.4rem; margin-bottom: 8px; }
+    .sub { color: #8b949e; margin-bottom: 20px; font-size: 0.95rem; }
+    #contador { color: #f0f6fc; font-size: 2.5rem; font-weight: 700; margin: 8px 0; }
+    .like-row { display: flex; align-items: center; gap: 16px; }
+    button { background: #db3d44; color: #fff; border: none; border-radius: 8px; padding: 10px 20px; font-size: 1rem; cursor: pointer; }
+    button:hover { background: #f04b53; }
+    #btnCheck { background: #1f6feb; margin-top: 14px; }
+    #btnCheck:hover { background: #388bfd; }
+    ol { font-size: 0.92rem; line-height: 1.8; padding-left: 20px; margin-top: 20px; }
+    code { background: #21262d; padding: 2px 6px; border-radius: 4px; color: #ffd43b; }
+    .tip { background: #1f2937; border-left: 4px solid #58a6ff; padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 0.9rem; margin-top: 16px; }
+    #autocheck { margin-top: 18px; font-weight: 600; color: #3fb950; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>❤️ Obj 2 — Eventos click: contador</h1>
+    <p class="sub">Meta: que un <code>click</code> aumente un contador visible en pantalla.</p>
+
+    <p id="contador">0</p>
+    <div class="like-row">
+      <button id="btnLike">❤️ Like</button>
+      <span class="sub" style="margin:0;">Haz clic varias veces</span>
+    </div>
+
+    <ol>
+      <li>En <code>script.js</code>: declara <code>let contador = 0;</code></li>
+      <li>Selecciona el <code>#contador</code> y el <code>#btnLike</code>.</li>
+      <li>Escucha el <code>click</code>: suma 1 al contador y muéstralo con <code>textContent</code>.</li>
+      <li>Cuando termines, pulsa <code>Comprobar mi ejercicio</code> para verificar si está bien.</li>
+    </ol>
+
+    <div class="tip">💡 Cada clic = un evento. Tu función “reacciona” y actualiza la pantalla: ¡esa es la magia de JS! ✨</div>
+    <button id="btnCheck">✔ Comprobar mi ejercicio</button>
+    <p id="autocheck">Pulsa «Comprobar mi ejercicio» para verificar.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
