@@ -32,7 +32,7 @@ const cargarUsuario = async () => {
 
     // 3. Mostrar el primer usuario
     document.querySelector("#resultado").textContent =
-        `${datos[0].name} - ${datos[0].email}`;
+        `${datos[0].name} - ${datos[0].email}, City: ${datos[0].address.city}`;
 
     // 4. Mostrar JSON en consola
     console.log(JSON.stringify(datos[0], null, 2));
